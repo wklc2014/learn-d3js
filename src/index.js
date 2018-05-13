@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from 'mirrorx';
-import App from './pages/App/App.jsx';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker.js';
+import App from './App.jsx';
 
 render(<App />, document.getElementById('root'));
-
 registerServiceWorker();
