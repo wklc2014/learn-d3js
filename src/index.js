@@ -12,3 +12,4 @@ console.log('3>>>', quantize(7));
 
 // const a = quantize.quantizes();
 // console.log('a>>>', a);
+
