@@ -1,15 +1,7 @@
-const { d3 } = window;
+import React from 'react';
+import { render } from 'mirrorx';
 
-// const root = document.getElementById('root');
+import App from './App.jsx';
 
-const quantize = d3.scale.quantize()
-  .domain([1, 10])
-  .range([0, 100]);
-
-console.log('1>>>', quantize(1));
-console.log('2>>>', quantize(3));
-console.log('3>>>', quantize(7));
-
-// const a = quantize.quantizes();
-// console.log('a>>>', a);
+render(<App />, document.getElementById('root'));
 
