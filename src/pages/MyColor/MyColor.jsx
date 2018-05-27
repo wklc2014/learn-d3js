@@ -11,7 +11,7 @@ const common_style = {
   marginBottom: 16,
 }
 
-export default class App extends Component {
+export default class MyColor extends Component {
 
   static defaultProps = {}
 
@@ -86,6 +86,6 @@ export default class App extends Component {
 
 }
 
-App.propTypes = {
+MyColor.propTypes = {
 
 }
