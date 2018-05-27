@@ -21,6 +21,7 @@ export default class MyPie extends Component {
   static defaultProps = {}
 
   componentDidMount() {
+    // 插入 svg 标签
     const dom_svg = d3.select('body')
       .select(`#${__div_id}`)
       .append('svg')
@@ -30,10 +31,13 @@ export default class MyPie extends Component {
     const inner_radius = 0;
     const outer_radius = svg_width / 3;
 
+    // 创建饼图
     const pie = d3.layout.pie()
       .value(function (d) {
         return d[1];
       })
+
+    // 转换数据
     const pie_data = pie(dataset);
 
     const arc = d3.svg.arc()
