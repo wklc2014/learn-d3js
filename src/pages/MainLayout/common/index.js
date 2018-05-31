@@ -16,6 +16,13 @@ export default [
     icon: 'upload',
     label: '饼状图',
     path: '/layout/pie',
+  },
+  {
+    isSidebar: true,
+    key: 'layout-force',
+    icon: 'upload',
+    label: '力导向图',
+    path: '/layout/force',
   }
 ]
 
