@@ -1,6 +1,9 @@
 import React from 'react';
 import { Router, Route, Switch } from 'mirrorx';
 
+import MyBarChart from './MyBarChart.jsx';
+import MyBrokenLineChart from './MyBrokenLineChart.jsx';
+
 import MainLayout from '../MainLayout/Index.jsx';
 
 import MyAxis from '../MyAxis/MyAxis.jsx';
@@ -13,6 +16,8 @@ function App(props) {
     <Router>
       <Switch>
         <MainLayout>
+          <Route path="/bar-chart" component={ MyBarChart } />
+          <Route path="/line-chart" component={ MyBrokenLineChart } />
           <Route path="/axis" component={ MyAxis } />
           <Route path="/color" component={ MyColor } />
           <Route path="/layout/pie" component={ MyPie } />

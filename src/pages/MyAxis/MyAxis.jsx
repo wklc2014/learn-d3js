@@ -18,10 +18,12 @@ export default class MyAxis extends Component {
       .attr('width', svg_width)
       .attr('height', svg_height);
 
+    // 比例尺
     const scale_x = d3.scale.linear()
       .domain([0, 10])
       .range([0, 300]);
 
+    // 坐标轴
     const axis = d3.svg.axis()
       .scale(scale_x)
       .orient('bottom')
@@ -30,9 +32,8 @@ export default class MyAxis extends Component {
 
     const dom_g = dom_svg.append('g')
       .classed('axis', true)
-      .attr('transform', 'translate(80, 80)');
-
-    dom_g.call(axis);
+      .attr('transform', 'translate(80, 80)')
+      .call(axis);
   }
 
   render() {

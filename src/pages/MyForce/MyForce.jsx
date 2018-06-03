@@ -112,7 +112,7 @@ export default class MyForce extends Component {
       console.log('运动结束');
     })
 
-    const drag = force.drag()
+    force.drag()
       .on('dragstart', function (d) {
         d.fixed = true;
       })
